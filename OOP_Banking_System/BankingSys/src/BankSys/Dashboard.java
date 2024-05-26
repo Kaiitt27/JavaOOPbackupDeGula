@@ -34,9 +34,9 @@ public class Dashboard extends JFrame {
         JScrollPane scrollPane = new JScrollPane(transactionList);
         scrollPane.setBounds(20, 135, 673, 290);
         depositButton = new JButton("Deposit");
-        depositButton.setBounds(23, 489, 290, 47);
+        depositButton.setBounds(20, 438, 290, 47);
         withdrawButton = new JButton("Withdraw");
-        withdrawButton.setBounds(370, 489, 290, 47);
+        withdrawButton.setBounds(372, 525, 290, 47);
 
         // Add components to the frame
         getContentPane().add(balanceLabel);
