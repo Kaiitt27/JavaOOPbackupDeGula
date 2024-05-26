@@ -19,6 +19,7 @@ public class Withdraw extends JFrame {
     private JButton withdrawButton;
     private JLabel messageLabel;
     private JPanel panel;
+    private JButton withdrawButton_1;
 
     public Withdraw() {
         getContentPane().setBackground(new Color(255, 255, 240));
@@ -48,7 +49,7 @@ public class Withdraw extends JFrame {
 
         // Withdraw amount text field
         withdrawField = new JTextField();
-        withdrawField.setBounds(52, 215, 410, 44);
+        withdrawField.setBounds(52, 215, 457, 44);
         panel.add(withdrawField);
 
         // Withdraw button
@@ -61,6 +62,10 @@ public class Withdraw extends JFrame {
         messageLabel.setBackground(new Color(238, 232, 170));
         messageLabel.setBounds(52, 300, 350, 25);
         panel.add(messageLabel);
+        
+        withdrawButton_1 = new JButton("Withdraw");
+        withdrawButton_1.setBounds(292, 391, 217, 44);
+        panel.add(withdrawButton_1);
 
         // Button action listener
         withdrawButton.addActionListener(new ActionListener() {
